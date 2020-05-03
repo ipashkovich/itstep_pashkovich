@@ -23,3 +23,11 @@ select *
 from Orders right join Customers on Customer_Id =Id
 where Order_Id > 5 
 order by Customer_Id
+
+/*Соотнесите записи из таблицы Customers по городу
+ (если Вася и Петя из одного города, они должны быть выведены в одной строке).
+ */  
+select a.LastName, b.LastName
+from Customers a, Customers b
+where a.adress=b.adress
+and a.adress = 'РБ' and a.LastName<>b.LastName
