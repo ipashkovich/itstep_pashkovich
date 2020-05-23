@@ -1,0 +1,431 @@
+package FirstLesson;
+/*
+ * Задание 1 
+Написать программу, которая предлагает пользователю 
+ввести c клавиатуры номер дня недели, и в ответ показыва-
+ет название этого дня (например, 6 – это суббота). Решить с 
+использованием switch.
+ */
+
+import java.util.Scanner;
+public class Task1 {
+	public static void main (String[] Args){
+
+	
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Введите число от 1 до 7 ");
+	int day = scan.nextInt();
+	scan.close(); 
+		       switch (day) {
+		       case 1: 
+			    	System.out.println("Понедельник");
+			   break;
+		       case 2: 
+			    	System.out.println("Вторник");
+			   break;
+		       case 3: 
+			    	System.out.println("Среда");
+			   break;
+		       case 4: 
+			    	System.out.println("Четверг");
+			   break;
+		       case 5: 
+			    	System.out.println("Пятница");
+			   break;
+		       case 6: 
+			    	System.out.println("Суббота");
+			   break;
+		       case 7: 
+			    	System.out.println("Воскресенье");
+			   break;
+			   default:
+				   System.out.println("Вы ввели число больше 7");
+			   
+			    }
+			    return;
+						    
+		}
+			
+}
+
+package FirstLesson;
+/*
+ * Задание 2
+С клавиатуры вводится время (количество часов от 0 до 
+24) – программа выводит приветствие, соответствующее 
+введенному времени (например, ввели 15 часов – выводится 
+приветствие «Добрый день»)
+ */
+
+import java.util.Scanner;
+public class Task2 {
+	public static void main(String[] Args){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Введите время (количество часов от 0 до 24)");
+		int time = scan.nextInt();
+		scan.close();
+		
+		if (time > 24 | time < 0){
+			System.out.println("Вы ввели некорректное время");
+			} else if (time >= 0 & time <= 12) {
+				System.out.println("Доброе утро!");
+			} else if (time > 12 & time <= 18) {
+				System.out.println("Добрый день!");
+			} else {
+				System.out.println("Добрый вечер!");
+			};
+			
+	}
+
+}
+package Modul03;
+
+/*
+ * Задание 3
+Написать программу, которая предлагает пользователю
+выбрать животное из списка (1 – кошка, 2 – собака и т.д.), и в
+ответ показывает, какие звуки издает выбранное животное.
+В списке должно быть не менее 10 животных.
+ */
+
+import java.util.Scanner;
+
+public class Task3 {
+	public static void main (String[] Args){
+		
+		String [][] twoDimArray = {{"1 - котик","2 - собачка","3 - корова","4 - лошадь","5 - коза","6 - овца","7 - курица"},
+									{"мяу-мяу","гав-гав","му-му","иго-го","меееее","беееее","ко-ко"}};//объявили массив и заполнили его элементами
+		
+		int kCol=twoDimArray[0].length; // кол-во столбцов в массиве
+		int kRow=twoDimArray.length; // кол-во строк в массиве
+				
+		System.out.println("Из списка выберите животное, и оно заговорит:");
+		for (int j = 0; j < kCol; j++) {//идём по столбцам
+			System.out.println(twoDimArray[0][j]); //вывод элемента
+		         }
+		Scanner scan = new Scanner(System.in);
+		int vibor = scan.nextInt();
+		
+		// вывод результата: животное и как говорит
+		System.out.println("Выбранное вами животное " + twoDimArray[0][vibor-1] + "\nон говорит " + twoDimArray[1][vibor-1]);
+		
+	}
+
+}
+
+package Modul03;
+
+	/*
+	 * Задание 4
+	Дана точка на плоскости заданная координатами x  и y, 
+	определить и вывести в консоль,  в какой четверти находит-
+	ся точка, в прямоугольной (декартовой)  системе координат. 
+	Четверти обозначены римскими цифрами.
+	 */
+
+	import java.util.Scanner;
+
+	public class Task4 {
+		public static void main (String[] Args){
+			Scanner scan = new Scanner (System.in);
+			System.out.println("Введите x и y");
+			int x = scan.nextInt();
+			int y = scan.nextInt();
+			
+			if (x < 0 & y > 0){
+				System.out.println("Это 2 плоскость");
+			} else if (x < 0 & y < 0){
+				System.out.println("Это 3 плоскость");
+			} else if (x > 0 & y < 0){
+				System.out.println("Это 4 плоскость");
+			} else {
+				System.out.println("Это 1 плоскость");
+			}
+			
+		}
+
+	}
+
+
+package Modul03;
+
+/*
+ * Задание 6
+Определить количество дней в году, который вводит
+пользователь, и вывести их в консоль. В високосном году –
+366 дней, тогда как в обычном – 365. Високосными годами
+являются все годы, делящиеся нацело на 4, за исключением
+столетий, которые не делятся нацело на 400.
+ */
+import java.util.Scanner;
+
+public class Task6 {
+	public static void main (String[] Args){
+		System.out.println("Введите год");
+		
+		Scanner scan = new Scanner(System.in);
+		int god = scan.nextInt();
+		
+		if (god % 4 != 0 ) {
+			System.out.println("Во введённом Вами году "+ god + " 365 дней, т.к. он НЕ високосный");
+		} else if (god % 100 == 0 & god % 400 != 0) {
+			System.out.println("Во введённом Вами году "+ god + " 365 дней, т.к. он НЕ високосный и столетие");
+		} else if (god % 100 == 0 & god % 400 == 0){
+			System.out.println("Во введённом Вами году "+ god + " 366 дней, т.к. он високосный и столетие");
+		} else {
+			System.out.println("Во введённом Вами году "+ god + " 366 дней, т.к. он високосный");
+		}
+		
+	}
+
+}
+
+package LessonFirst;
+/*
+ * Задание 7
+Пользователь вводит с клавиатуры букву. Программа 
+должна определить, в какой раскладке введена буква – в ла-
+тинской или кирилице. Вывести в консоль: «латиница», если 
+буква введена латиницей или «кирилица», если буква отно-
+сится к кирилическому алфавиту. Если введена цифра, а не 
+буква, вывести «цифра». Если символ не относится ни к бук-
+вам, ни к цифрам, вывести «невозможно определить».
+ */
+// ВАРИАНТ 2 - СРАВНЕНИЕ Character.UnicodeBlock.
+import java.util.Scanner;
+public class Task7 {
+	public static void main(String[] Args){
+		System.out.println("Введите любую букву «кирилицей» или «латиницей» ");
+		Scanner scan = new Scanner(System.in);
+		char letter = scan.next().charAt(0);
+		System.out.println("Вы ввели " + letter);
+		scan.close();
+		
+		if (Character.isDigit(letter)) { 
+			System.out.println(" это цифра, а не буква");
+		} else if (Character.isAlphabetic(letter)) {
+				if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.CYRILLIC)){ 
+				System.out.println("кирилица");
+				} else if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.BASIC_LATIN)){
+					System.out.println("латиница");
+					}
+		} else {
+		System.out.println("невозможно определить");
+		}
+	}
+}
+
+package LessonFirst;
+/*
+ * Задание 7
+Пользователь вводит с клавиатуры букву. Программа 
+должна определить, в какой раскладке введена буква – в ла-
+тинской или кирилице. Вывести в консоль: «латиница», если 
+буква введена латиницей или «кирилица», если буква отно-
+сится к кирилическому алфавиту. Если введена цифра, а не 
+буква, вывести «цифра». Если символ не относится ни к бук-
+вам, ни к цифрам, вывести «невозможно определить».
+ */
+// ВАРИАНТ 1 - ОСНОВАН НА ЦИФРОВЫХ КОДАХ
+import java.util.Scanner;
+public class Task7 {
+	public static void main(String[] Args){
+		System.out.println("Введите любую букву «кирилицей» или «латиницей» ");
+		Scanner scan = new Scanner(System.in);
+		char letter = scan.next().charAt(0);
+		System.out.println("Вы ввели " + letter);
+		//System.out.println((int) letter); // 48-0, 65 - A, 97 - a, 90 - Z, 122 - z, 1040 - А, 1072-а, 1103-я
+		scan.close();
+		
+		if (Character.isDigit(letter)) { 
+			System.out.println(" это цифра, а не буква");
+		} else if (letter >= (char) 65 && letter <= (char) 122) {
+			System.out.println("латиница");
+			} else if (letter >= (char) 1040 && letter <= (char) 1103) { //но 1105 это ё, 1104 -?
+				System.out.println("кирилица");
+				} else {
+					System.out.println("невозможно определить");
+					}
+		
+	}
+}
+package FirstLesson;
+/*
+ * Задание 8
+Даны два числа x и y. Программа должна вывести в кон-
+соль YES, – если оба числа четные, либо оба числа нечетные; 
+иначе программа ничего не выводит.
+
+ */
+import java.util.Scanner;
+public class Task8 {
+	public static void main (String[] Args){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Введите целое число x");
+		int x = scan.nextInt();
+		System.out.println("Введите целое число y");
+		int y = scan.nextInt();
+		
+		scan.close();
+			if ((x % 2 == 0 & y % 2 == 0)|(x % 2 != 0 & y % 2 != 0)){
+				System.out.println("YES");
+			} 
+		
+	}
+
+}
+
+package LessonFirst;
+/*
+ * Задание 9
+Даны координаты начала и координаты конца отрезка. 
+Если считать отрезок обозначением горки, то в одном слу-
+чае он обозначает спуск, в другом – подъем. Определить и 
+вывести на экран – спуск это или подъем, ровная дорога или 
+вообще отвесная.
+ */
+
+import java.util.Scanner;
+
+public class Task9 {
+	public static void main (String[] Args){
+		System.out.println("Дайте координаты\nВведите начальные х и у");
+		Scanner scan = new Scanner(System.in);
+		int x1 = scan.nextInt();
+		int y1 = scan.nextInt();
+			
+			System.out.println("Введите конечную координату");
+			int x2 = scan.nextInt();
+			int y2 = scan.nextInt();
+			scan.close();
+
+			if ((x1 < x2 & y1 < y2) | (x1 > x2 & y1 > y2 )){
+				System.out.println ("Вы ввели начало (" + x1 + ";" + y1 + ") и конец (" + x2 + ";" + y2 + ")\nЭто подъём");	
+				} else if ((x1 < x2 & y1 > y2) | (x1 > x2 & y1 < y2 )) {
+					System.out.println ("Вы ввели начало (" + x1 + ";" + y1 + ") и конец (" + x2 + ";" + y2 + ")\nЭто спуск");	
+					} else if (x1 == x2 & y1 != y2) {
+						System.out.println ("Вы ввели начало (" + x1 + ";" + y1 + ") и конец (" + x2 + ";" + y2 + ")\nЭто отвесная дорога");
+					} else if (y1 == y2 & x1 != x2){
+						System.out.println ("Вы ввели начало (" + x1 + ";" + y1 + ") и конец (" + x2 + ";" + y2 + ")\nЭто ровная дорога");
+						} else {
+							System.out.println ("Вы ввели начало (" + x1 + ";" + y1 + ") и конец (" + x2 + ";" + y2 + ")\nВы стоите");
+						}
+		
+			}
+			
+	}
+
+package LessonFirst;
+/*
+ * Задание 10
+Определить номер подъезда девятиэтажного дома, по 
+указанному номеру квартиры N. Считать, что на каждом 
+этаже находится M квартир. Вывести в консоль номер подъ-
+езда. 
+
+ */
+import java.util.Scanner;
+public class Task10 {
+	public static void main (String[] Args){
+		System.out.println("Введите номер квартиры");
+		Scanner scan = new Scanner (System.in);
+		int numFlat = scan.nextInt();
+		
+		System.out.println("Сколько квартир на одном этаже?");
+		int kolFlat = scan.nextInt();
+		scan.close();
+		
+		int pod = (numFlat / kolFlat + 1) / 9 + 1;
+		
+		System.out.println("Квартира номер " +numFlat + " находится в подъезде " + pod);
+		
+	}
+
+}
+
+package LessonFirst;
+/*
+ * Задание 11
+Найти корни квадратного уравнения и вывести их на 
+экран, если они есть. Если корней нет, то вывести сообще-
+ние об этом. Конкретное квадратное уравнение определяет-
+ся коэффициентами a, b, c, которые вводит пользователь с 
+клавиатуры.
+ */
+import java.util.Scanner;
+
+public class Task11 {
+	public static void main (String[] Args){
+		System.out.println("Введите a, b, с для решения квадратного уравнения вида ax^2+bx+c=0" );
+		Scanner scan = new Scanner(System.in);
+		
+		double a = scan.nextDouble();
+		double b = scan.nextDouble();
+		double c = scan.nextDouble();
+		scan.close();
+
+		double d = b * b - 4 * a * c;
+			if (d > 0){
+			double	x1 = (-b - Math.sqrt(d)) / 2 * a;
+			double	x2 = (-b + Math.sqrt(d)) / 2 * a;
+			    System.out.printf("У вас получилось уравнение: " + "%.0f" + "x^2+" + "%.0f" + "x+" + "%.0f" + "=0\n"
+			       + "Корни уравнения: х1 = " + x1 + " и х2 = " + x2 , a, b, c );
+				  } else if (d == 0) {
+					double x = -b / (2 * a);
+				    System.out.printf("У вас получилось уравнение: " + "%.0f" + "x^2+" + "%.0f" + "x+" + "%.0f" + "=0\n"
+						       + "Корень уравнения единственный: х = " + x , a, b, c );
+				  		} else {
+						    System.out.printf("У вас получилось уравнение: " + "%.0f" + "x^2+" + "%.0f" + "x+" + "%.0f" + "=0\n"
+								       + "Корней у этого уравнения нет!", a, b, c );
+				  		}
+		
+	}
+
+}
+
+
+package LessonFirst;
+/*
+ * Задание 12
+Программа запрашивает шестизначное число. После вво-
+да определяет, будет ли являться «счастливым» билет с та-
+ким номером (сумма первых трех цифр совпадает с суммой 
+трех последних).
+Пример входных данных: 
+423027
+954832
+Вывод:
+Да
+Нет
+
+ */
+import java.util.Scanner;
+
+public class Task13 {
+	public static void main (String[] Args){
+		System.out.println("Введите шестизначное число");
+		Scanner scan = new Scanner(System.in);
+		
+		String bilet = scan.next();
+			scan.close();
+		
+		if (bilet.length() > 6){
+			System.out.println("Вы ввели не шестизначное число, попробуйте опять");
+			} else {
+				int bil1 = Integer.parseInt(bilet.substring(0, 1)) 
+						+ Integer.parseInt(bilet.substring(1, 2)) + Integer.parseInt(bilet.substring(2, 3));
+				int bil2 = Integer.parseInt(bilet.substring(3, 4)) 
+						+ Integer.parseInt(bilet.substring(4, 5)) + Integer.parseInt(bilet.substring(5, 6));
+				
+					if (bil1 == bil2){
+						System.out.println("Ваш билет " + bilet + " счастливый");	
+					} else {
+						System.out.println("Ваш билет " + bilet + " Не счастливый");
+					}
+	
+			}
+
+		}
+		
+		
+}
