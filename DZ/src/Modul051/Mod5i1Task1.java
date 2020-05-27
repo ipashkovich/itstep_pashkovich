@@ -16,7 +16,7 @@ public class Mod5i1Task1 {
 	public static void main (String[] Args){
 		System.out.println("������� �����");
 		Scanner scan = new Scanner(System.in);
-		String userText = scan.nextLine();//����� ������������
+		String userText = scan.nextLine();//����� ������������ ьь
 		
 		System.out.println("������� ��� ���� ������");
 		String userSymb = scan.next();//������ ������������
