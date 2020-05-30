@@ -1,10 +1,10 @@
 package Modul051;
 /*
- * Задание 1 
-Ввести с клавиатуры строку текста, а затем один символ. 
-Показать на консоль индексы и количество совпадений (ищем 
-вхождения символа в строку). В случае если совпадений не 
-найдено, вывести соответствующий текст.
+ * Р—Р°РґР°РЅРёРµ 1 
+Р’РІРµСЃС‚Рё СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ СЃС‚СЂРѕРєСѓ С‚РµРєСЃС‚Р°, Р° Р·Р°С‚РµРј РѕРґРёРЅ СЃРёРјРІРѕР». 
+РџРѕРєР°Р·Р°С‚СЊ РЅР° РєРѕРЅСЃРѕР»СЊ РёРЅРґРµРєСЃС‹ Рё РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРІРїР°РґРµРЅРёР№ (РёС‰РµРј 
+РІС…РѕР¶РґРµРЅРёСЏ СЃРёРјРІРѕР»Р° РІ СЃС‚СЂРѕРєСѓ). Р’ СЃР»СѓС‡Р°Рµ РµСЃР»Рё СЃРѕРІРїР°РґРµРЅРёР№ РЅРµ 
+РЅР°Р№РґРµРЅРѕ, РІС‹РІРµСЃС‚Рё СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёР№ С‚РµРєСЃС‚.
  */
 
 import java.util.Scanner;
@@ -13,16 +13,16 @@ import java.util.regex.Pattern;
 
 public class Mod5i1Task1 {
 	public static void main (String[] Args){
-    System.out.println("Введите текст");
+    System.out.println("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚");
 	Scanner scan = new Scanner(System.in);
 	String userText = scan.nextLine();
 		
-	System.out.println("Введите символ");
+	System.out.println("Р’РІРµРґРёС‚Рµ СЃРёРјРІРѕР»");
 	String userSymb = scan.next();
 	scan.close();
 		
 	if (userSymb.length() > 1) {
-		System.out.println("Вы вели не один символ");
+		System.out.println("Р’С‹ РІРІРµР»Рё Р±РѕР»СЊС€Рµ 1 СЃРёРјРІРѕР»Р°");
 	} else {
 
 	   Pattern pattern = Pattern.compile(userSymb);
@@ -37,7 +37,7 @@ public class Mod5i1Task1 {
 	   			}  
 
 	   		} else {
-	        	System.out.println("Символ не найден");
+	        	System.out.println("РЎРѕРІРїР°РґРµРЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ");
 	        }
         }
     }
