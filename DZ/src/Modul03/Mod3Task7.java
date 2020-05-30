@@ -22,11 +22,11 @@ public class Mod3Task7 {
 		if (Character.isDigit(letter)) { 
 			System.out.println(" это цифра, а не буква");
 		} else if (Character.isAlphabetic(letter)) {
-				if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.CYRILLIC)){ 
+			if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.CYRILLIC)){ 
 				System.out.println("кирилица");
-				} else if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.BASIC_LATIN)){
-					System.out.println("латиница");
-					}
+			} else if (Character.UnicodeBlock.of(letter).equals(Character.UnicodeBlock.BASIC_LATIN)){
+				System.out.println("латиница");
+			}
 		} else {
 		System.out.println("невозможно определить");
 		}
