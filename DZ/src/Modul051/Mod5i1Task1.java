@@ -32,7 +32,7 @@ public class Mod5i1Task1 {
 	   		if (matcher.find()){
 	        	
 	   			while (matcher.find()) {
-	   			System.out.println(matcher.start()); // ������� �������
+	   			System.out.println(matcher.start()); 
 	   			n++;
 	   			}  
 
