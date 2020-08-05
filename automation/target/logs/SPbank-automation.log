@@ -1,0 +1,59 @@
+2020-08-05 13:54:37,591 INFO  [main] test: Surefire test START
+2020-08-05 13:55:29,257 INFO  [main] Installed of driver successfully.Driver org.openqa.selenium.support.events.EventFiringWebDriver
+2020-08-05 13:55:46,099 INFO  [main] open: https://idemo.bspb.ru/
+2020-08-05 13:55:46,243 INFO  [main] Trying to find element By.name: username
+2020-08-05 13:55:47,279 INFO  [main] Element is found input By.name: username
+2020-08-05 13:55:47,837 INFO  [main] Trying to find element By.name: username
+2020-08-05 13:55:48,111 INFO  [main] Element is found input By.name: username
+2020-08-05 13:55:48,131 INFO  [main] input clear
+2020-08-05 13:55:48,141 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:55:48,403 INFO  [main] Element is found input By.name: password
+2020-08-05 13:55:48,575 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:55:48,797 INFO  [main] Element is found input By.name: password
+2020-08-05 13:55:48,878 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:55:49,139 INFO  [main] Element is found input By.name: password
+2020-08-05 13:55:49,300 INFO  [main] input clear
+2020-08-05 13:55:50,221 INFO  [main] Running test #1:successfulLoginTest
+2020-08-05 13:55:50,514 INFO  [main] Trying to find element By.name: username
+2020-08-05 13:55:51,576 INFO  [main] Element is found input By.name: username
+2020-08-05 13:55:53,605 INFO  [main] Insert login demo
+2020-08-05 13:55:53,631 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:55:54,559 INFO  [main] Element is found input By.name: password
+2020-08-05 13:55:55,955 INFO  [main] Insert login demo
+2020-08-05 13:55:56,000 INFO  [main] Trying to find element By.id: login-button
+2020-08-05 13:55:58,090 INFO  [main] Element is found button By.id: login-button
+2020-08-05 13:56:04,531 INFO  [main] Click button successfull
+2020-08-05 13:56:04,547 INFO  [main] Trying to find element By.xpath: //*[@id="alerts-container"]/div[2]
+2020-08-05 13:56:04,968 INFO  [main] Element is found div By.xpath: //*[@id="alerts-container"]/div[2]
+2020-08-05 13:56:05,041 INFO  [main] tests.LoginTests
+2020-08-05 13:56:05,041 INFO  [main] test: successfulLoginTest IS SUCCESS
+2020-08-05 13:56:05,041 INFO  [main] Execution time: 14 seconds
+2020-08-05 13:56:17,666 INFO  [main] Installed of driver successfully.Driver org.openqa.selenium.support.events.EventFiringWebDriver
+2020-08-05 13:56:21,611 INFO  [main] open: https://idemo.bspb.ru/
+2020-08-05 13:56:21,643 INFO  [main] Trying to find element By.name: username
+2020-08-05 13:56:21,920 INFO  [main] Element is found input By.name: username
+2020-08-05 13:56:22,118 INFO  [main] Trying to find element By.name: username
+2020-08-05 13:56:22,357 INFO  [main] Element is found input By.name: username
+2020-08-05 13:56:22,372 INFO  [main] input clear
+2020-08-05 13:56:22,382 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:56:22,528 INFO  [main] Element is found input By.name: password
+2020-08-05 13:56:22,653 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:56:22,763 INFO  [main] Element is found input By.name: password
+2020-08-05 13:56:22,783 INFO  [main] Trying to find element By.name: password
+2020-08-05 13:56:23,292 INFO  [main] Element is found input By.name: password
+2020-08-05 13:56:23,391 INFO  [main] input clear
+2020-08-05 13:56:23,400 INFO  [main] Running test #2:emptyFieldsLoginTest
+2020-08-05 13:56:23,444 INFO  [main] Trying to find element By.id: login-button
+2020-08-05 13:56:23,683 INFO  [main] Element is found button By.id: login-button
+2020-08-05 13:56:25,039 INFO  [main] Click button successfull
+2020-08-05 13:56:25,067 INFO  [main] Trying to find element By.xpath: //*[@id="alerts-container"]/div[2]
+2020-08-05 13:56:25,282 INFO  [main] Element is found div By.xpath: //*[@id="alerts-container"]/div[2]
+2020-08-05 13:56:25,362 INFO  [main] tests.LoginTests
+2020-08-05 13:56:25,362 INFO  [main] test: emptyFieldsLoginTest IS SUCCESS
+2020-08-05 13:56:25,362 INFO  [main] Execution time: 1 seconds
+2020-08-05 13:56:32,453 INFO  [main] Running test #3:testGet
+2020-08-05 13:56:32,474 INFO  [main] id 123 - Шортики
+2020-08-05 13:56:43,877 INFO  [main] apitesting.ApiShopTest
+2020-08-05 13:56:43,877 INFO  [main] test: testGet IS SUCCESS
+2020-08-05 13:56:43,878 INFO  [main] Execution time: 11 seconds
+2020-08-05 13:56:43,880 INFO  [main] test: Surefire test FINISH

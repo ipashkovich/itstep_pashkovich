@@ -1,0 +1,15 @@
+utils\TestListener.class
+page\signinpage\SigninPageLocators.class
+page\confirmationpage\ConfirmationPage.class
+page\confirmationpage\ConfirmPageLocators.class
+servise\ScreenShotServise.class
+utils\Waiters.class
+page\signinpage\SigninPage.class
+tests\BaseTest.class
+page\errormessagepage\ErrorMessagePageLocators.class
+utils\WebDriverListener.class
+page\errormessagepage\ErrorMessagePage.class
+tests\LoginTests.class
+apitesting\ApiShopTest.class
+page\BasePage.class
+driver\DriverSingleton.class

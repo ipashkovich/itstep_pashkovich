@@ -1,0 +1,34 @@
+[main] DEBUG io.github.bonigarcia.wdm.WebDriverManager  - Driver chromedriver 84.0.4147.30 found in cache
+[main] INFO  io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not update test fixture: test fixture with uuid 4e7ee6df-cb0e-45c7-a80e-6dfc6b160970 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test fixture: test fixture with uuid 4e7ee6df-cb0e-45c7-a80e-6dfc6b160970 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid 844cd1bf-9b17-4778-974d-90bdbb601b51 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid 844cd1bf-9b17-4778-974d-90bdbb601b51 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid 088f3ce2-943c-45aa-be74-0bfbc50fbab2 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid 088f3ce2-943c-45aa-be74-0bfbc50fbab2 not found
+[main] DEBUG io.github.bonigarcia.wdm.WebDriverManager  - Driver chromedriver 84.0.4147.30 found in cache
+[main] INFO  io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not update test fixture: test fixture with uuid 3dd51d4a-54ae-42fd-a8d0-11c16d22e453 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test fixture: test fixture with uuid 3dd51d4a-54ae-42fd-a8d0-11c16d22e453 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid e7330e65-71f8-4360-ab15-5f6a2677ffb5 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid e7330e65-71f8-4360-ab15-5f6a2677ffb5 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid a2f889d9-d5bf-4454-9536-7ee9cb9a557f not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid a2f889d9-d5bf-4454-9536-7ee9cb9a557f not found
+[main] DEBUG io.github.bonigarcia.wdm.WebDriverManager  - Driver chromedriver 84.0.4147.30 found in cache
+[main] INFO  io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not update test fixture: test fixture with uuid 79457005-2f6c-4d08-9f71-8030599ad262 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test fixture: test fixture with uuid 79457005-2f6c-4d08-9f71-8030599ad262 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid b8acbb27-1048-4c63-a49f-14a5aed8f0ec not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid b8acbb27-1048-4c63-a49f-14a5aed8f0ec not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid 3a4d2663-9482-435a-b4ce-4c177968de55 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid 3a4d2663-9482-435a-b4ce-4c177968de55 not found
+[main] DEBUG io.github.bonigarcia.wdm.WebDriverManager  - Driver chromedriver 84.0.4147.30 found in cache
+[main] INFO  io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not update test fixture: test fixture with uuid 507ef997-760e-4247-9cd3-e042c57a70ce not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test fixture: test fixture with uuid 507ef997-760e-4247-9cd3-e042c57a70ce not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid 26289b92-99b4-46b4-902b-98aaec591566 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid 26289b92-99b4-46b4-902b-98aaec591566 not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not stop test container: container with uuid 9f091066-7d76-49ab-beef-71224a75d5ee not found
+[main] ERROR io.qameta.allure.AllureLifecycle  - Could not write test container: container with uuid 9f091066-7d76-49ab-beef-71224a75d5ee not found
+[main] DEBUG io.github.bonigarcia.wdm.WebDriverManager  - Driver chromedriver 84.0.4147.30 found in cache
+[main] INFO  io.github.bonigarcia.wdm.WebDriverManager  - Exporting webdriver.chrome.driver as C:\Users\User\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe

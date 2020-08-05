@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="126297" started-at="2020-08-05T13:54:37 BRT" finished-at="2020-08-05T13:56:43 BRT">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="126297" started-at="2020-08-05T13:54:37 BRT" finished-at="2020-08-05T13:56:43 BRT">
+      <class name="apitesting.ApiShopTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitesting.ApiShopTest@12abdfb]" name="setup" is-config="true" duration-ms="5498" started-at="2020-08-05T13:56:26 BRT" finished-at="2020-08-05T13:56:32 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testGet()[pri:3, instance:apitesting.ApiShopTest@12abdfb]" name="testGet" duration-ms="11424" started-at="2020-08-05T13:56:32 BRT" description="Test API shop - GET" finished-at="2020-08-05T13:56:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGet -->
+      </class> <!-- apitesting.ApiShopTest -->
+      <class name="tests.LoginTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@b0e5507]" name="setup" is-config="true" duration-ms="71346" started-at="2020-08-05T13:54:37 BRT" finished-at="2020-08-05T13:55:49 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="successfulLoginTest()[pri:1, instance:tests.LoginTests@b0e5507]" name="successfulLoginTest" duration-ms="14809" started-at="2020-08-05T13:55:50 BRT" description="VALID USER" finished-at="2020-08-05T13:56:05 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTests@b0e5507]" name="tearDown" is-config="true" duration-ms="2916" started-at="2020-08-05T13:56:05 BRT" finished-at="2020-08-05T13:56:08 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@b0e5507]" name="setup" is-config="true" duration-ms="15328" started-at="2020-08-05T13:56:08 BRT" finished-at="2020-08-05T13:56:23 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="emptyFieldsLoginTest()[pri:2, instance:tests.LoginTests@b0e5507]" name="emptyFieldsLoginTest" duration-ms="1962" started-at="2020-08-05T13:56:23 BRT" description="EMPTY FIELDS" finished-at="2020-08-05T13:56:25 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyFieldsLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginTests@b0e5507]" name="tearDown" is-config="true" duration-ms="1577" started-at="2020-08-05T13:56:25 BRT" finished-at="2020-08-05T13:56:26 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
